@@ -1,0 +1,122 @@
+.main {
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #3c9ae2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 2px gray;
+  margin-right: 20px;
+  min-height: 100%;
+  padding: 10px;
+}
+
+.collapsed-sidebar {
+  background-color: #3c9ae2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 2px gray;
+  margin-right: 20px;
+  min-height: 100%;
+  padding: 8px;
+  display: none;
+}
+
+.sidebar-header img {
+  height: 8rem !important;
+  width: 8rem;
+  padding: 6px;
+  border-radius: 50% !important;
+  background-color: white;
+
+  border: 4px solid rgb(51, 85, 153) !important;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px gray;
+  margin-bottom: 20px;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.body {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 2px gray;
+  height: 81vh;
+  width: 100%;
+  padding: 15px;
+  overflow-y: scroll;
+  scrollbar-color: rgb(51, 85, 153) white;
+  scrollbar-gutter: stable;
+  scrollbar-gutter: stable both-edges;
+  scrollbar-width: thin;
+  scroll-padding: 20px;
+}
+
+/* .menu {
+  margin-top: 100px;
+} */
+
+.menu-item {
+  margin-top: 30px;
+  padding: 3px;
+  border: 2px solid rgba(68, 6, 6, 0.301);
+  border-radius: 10px;
+  background-color: rgb(59, 100, 183);
+  &:hover {
+    opacity: 0.75;
+  }
+}
+.menu-item a {
+  color: white;
+  font-size: 18px;
+  padding: 3px;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.685);
+  }
+}
+
+.menu-item i {
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+  padding: 1px;
+  color: white;
+}
+
+.ham-icon {
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+  padding-left: -10px;
+  cursor: pointer;
+  color: orangered;
+  font-weight: bold;
+}
+
+.anchor1 {
+  color: #3c9ae2 !important;
+  text-decoration: underline !important;
+  font-weight: bold !important;
+  cursor: pointer;
+  &:hover {
+    color: #198ae1 !important;
+  }
+}
