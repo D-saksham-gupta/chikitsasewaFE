@@ -17,7 +17,7 @@ function Notifications() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/mark-all-notifications-as-seen",
+        "https://chikitsa-sewa-backend.onrender.com/api/user/mark-all-notifications-as-seen",
         {
           userId: user._id,
         },
@@ -43,7 +43,7 @@ function Notifications() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/delete-all-notifications",
+        "https://chikitsa-sewa-backend.onrender.com/api/user/delete-all-notifications",
         {
           userId: user._id,
         },
