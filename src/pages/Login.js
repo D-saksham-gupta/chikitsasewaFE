@@ -13,7 +13,7 @@ function Login() {
   const onFinish = async (values) => {
     try {
       dispatch(showLoading());
-      const response = await axios.post("/api/user/login", values);
+      const response = await axios.post("https://chikitsa-sewa-backend.onrender.com/api/user/login", values);
       dispatch(hideLoading());
       if (response.data.success) {
         toast.success(response.data.message);
