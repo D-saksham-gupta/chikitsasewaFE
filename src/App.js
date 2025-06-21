@@ -13,6 +13,7 @@ import Userslist from "./pages/Admin/Userslist";
 import Doctorslist from "./pages/Admin/Doctorslist";
 import Profile from "./pages/Doctor/Profile";
 import BookAppointment from "./pages/BookAppointment";
+import Main from "./pages/Main";
 //import Loading from "./components/303.gif";
 // import "antd/dist/antd";
 
@@ -46,8 +47,9 @@ export default function App() {
             </PublicRoute>
           }
         />
+        <Route path="/" element={<Main />} />
         <Route
-          path="/"
+          path="/home"
           element={
             <ProtectedRoute>
               <Home />

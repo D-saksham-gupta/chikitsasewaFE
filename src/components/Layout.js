@@ -13,7 +13,7 @@ function Layout({ children }) {
   const userMenu = [
     {
       name: "Home",
-      path: "/",
+      path: "/home",
       icon: "ri-home-4-line",
     },
     {
@@ -37,7 +37,7 @@ function Layout({ children }) {
   const doctorMenu = [
     {
       name: "Home",
-      path: "/",
+      path: "/home",
       icon: "ri-home-4-line",
     },
     {
@@ -55,7 +55,7 @@ function Layout({ children }) {
   const adminMenu = [
     {
       name: "Home",
-      path: "/",
+      path: "/home",
       icon: "ri-home-4-fill",
     },
 
@@ -125,12 +125,12 @@ function Layout({ children }) {
                 setTimeout(() => {
                   dispatch(hideLoading());
                   localStorage.clear();
-                  navigate("/login");
+                  navigate("/");
                 }, 1000);
               }}
             >
               <i className="ri-logout-box-r-line"></i>
-              {!collapsed && <Link to="/login">Logout</Link>}
+              {!collapsed && <Link to="/">Logout</Link>}
             </div>
           </div>
         </div>

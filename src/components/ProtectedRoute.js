@@ -37,19 +37,18 @@ function ProtectedRoute(props) {
     }
   };
   useEffect(() => {
-    if (!user) {
-      getUser();
-    }
-  }, [user]);
-  useEffect(() => {
     getUser();
   }, []);
 
-  if (localStorage.getItem("token")) {
-    return props.children;
-  } else {
+  if (!localStorage.getItem("token")) {
     return <Navigate to="/login" />;
   }
+
+  if (!user) {
+    return null; // or a loading spinner
+  }
+
+  return props.children;
 }
 
 export default ProtectedRoute;
