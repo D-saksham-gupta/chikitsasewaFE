@@ -101,7 +101,7 @@ const Contact = () => {
               </p>
               <button className="flex items-center space-x-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors">
                 <Phone className="h-4 w-4" />
-                <span>Emergency: 911</span>
+                <span>Emergency: 112</span>
               </button>
             </div>
 

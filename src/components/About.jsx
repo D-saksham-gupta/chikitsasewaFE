@@ -49,7 +49,7 @@ const About = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-cyan-400">
-              MediCare Pro
+              Chikitsa Sewa
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

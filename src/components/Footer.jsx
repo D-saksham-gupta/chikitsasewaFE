@@ -114,14 +114,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-sky-400" />
-                <p className="text-gray-300">info@mediccarepro.com</p>
+                <p className="text-gray-300">info@chikitsasewa.com</p>
               </div>
             </div>
 
             {/* Emergency Notice */}
             <div className="bg-red-900/30 border border-red-700/50 p-4 rounded-lg mt-6">
               <p className="text-red-300 text-sm font-medium">
-                Emergency: Call 911
+                Emergency: Call 112
               </p>
               <p className="text-red-400 text-xs">
                 For life-threatening emergencies
@@ -151,8 +151,8 @@ const Footer = () => {
           </div>
           <div className="text-center mt-6 pt-6 border-t border-gray-800">
             <p className="text-gray-400 text-sm">
-              © 2024 MediCare Pro. All rights reserved. | Licensed Healthcare
-              Provider
+              © 2024 ChikitsaSewa Pro. All rights reserved. | Licensed
+              Healthcare Provider
             </p>
           </div>
         </div>

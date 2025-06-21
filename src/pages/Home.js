@@ -33,7 +33,7 @@ function Home() {
   const getUserData = async () => {
     try {
       const response = await axios.get(
-        "/api/user/get-user-info-by-id",
+        "https://chikitsa-sewa-backend.onrender.com/api/user/get-user-info-by-id",
 
         {
           headers: {
