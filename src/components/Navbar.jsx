@@ -137,17 +137,19 @@ const Navbar = () => {
                 Contact
               </button>
               <div className="border-t pt-3 space-y-2">
-                <button className="flex items-center space-x-2 w-full px-4 py-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-lg">
+                <button
+                  onClick={() => navigate("/home")}
+                  className="flex items-center space-x-2 w-full px-4 py-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-lg"
+                >
                   <Calendar className="h-4 w-4" />
                   <span>Book Appointment</span>
                 </button>
-                <button className="flex items-center space-x-2 w-full px-4 py-2 text-gray-700 hover:text-sky-500 transition-colors">
+                <button
+                  onClick={() => navigate("/login")}
+                  className="flex items-center space-x-2 w-full px-4 py-2 text-gray-700 hover:text-sky-500 transition-colors"
+                >
                   <LogIn className="h-4 w-4" />
                   <span>Login</span>
-                </button>
-                <button className="flex items-center space-x-2 w-full px-4 py-2 border border-gray-300 rounded-lg hover:border-sky-500 hover:text-sky-500 transition-colors">
-                  <UserMd className="h-4 w-4" />
-                  <span>Doctor Login</span>
                 </button>
               </div>
             </div>
