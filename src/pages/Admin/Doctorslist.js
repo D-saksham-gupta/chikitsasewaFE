@@ -13,11 +13,14 @@ function Doctorslist() {
   const getDoctorsData = async () => {
     try {
       dispatch(showLoading());
-      const response = await axios.get("/api/admin/get-all-doctors", {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      });
+      const response = await axios.get(
+        "https://chikitsa-sewa-backend.onrender.com/api/admin/get-all-doctors",
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
+      );
       dispatch(hideLoading());
       if (response.data.success) {
         setDoctors(response.data.data);
@@ -32,7 +35,7 @@ function Doctorslist() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/admin/change-doctor-account-status",
+        "https://chikitsa-sewa-backend.onrender.com/api/admin/change-doctor-account-status",
         {
           doctorId: record._id,
           userId: record.userId,

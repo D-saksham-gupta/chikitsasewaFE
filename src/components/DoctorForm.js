@@ -57,12 +57,11 @@ function DoctorForm({ onFinish, initialValues }) {
         </Col>
         <Col span={8} xs={24} sm={24} lg={8}>
           <Form.Item
-            required
             label="Website:"
             name="website"
-            rules={[{ required: true }]}
+            rules={[{ required: false }]}
           >
-            <Input placeholder="www.xyz.com" />
+            <Input placeholder="If any" />
           </Form.Item>
         </Col>
         <Col span={8} xs={24} sm={24} lg={8}>
@@ -125,8 +124,11 @@ function DoctorForm({ onFinish, initialValues }) {
         className="d-flex justify-content-end"
         style={{ width: "max-content" }}
       >
-        <Button className="primary-button d-flex dbtn" htmlType="submit">
-          Submit
+        <Button
+          className="flex items-center mt-4 space-x-2 px-6 py-6 bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded hover:from-sky-600 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
+          htmlType="submit"
+        >
+          {initialValues ? "Update" : "Apply"}
         </Button>
       </div>
     </Form>

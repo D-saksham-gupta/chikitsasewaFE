@@ -1,5 +1,6 @@
 import React from "react";
 import { Calendar, Shield, Clock, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -34,10 +35,13 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-full hover:from-sky-600 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105 shadow-xl text-lg font-semibold">
+              <Link
+                to={"/home"}
+                className="flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-full hover:from-sky-600 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105 shadow-xl text-lg font-semibold"
+              >
                 <Calendar className="h-5 w-5" />
                 <span>Book Appointment Now</span>
-              </button>
+              </Link>
               <button className="px-8 py-4 border-2 border-sky-500 text-sky-500 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 text-lg font-semibold">
                 View Our Services
               </button>

@@ -66,7 +66,7 @@ const About = () => {
               Transforming Healthcare Experience
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              With over 15 years of excellence in healthcare, MediCare Pro has
+              With over 15 years of excellence in healthcare, Chikitsa Sewa has
               been at the forefront of medical innovation, providing
               comprehensive healthcare solutions that prioritize patient
               wellness and satisfaction.

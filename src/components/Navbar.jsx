@@ -8,10 +8,12 @@ import {
   User as UserMd,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { user } = useSelector((state) => state.user);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -41,7 +43,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-2">
             <Stethoscope className="h-8 w-8 text-sky-500" />
             <span className="text-xl font-bold text-gray-800">
-              MediCare Pro
+              Chikitsa Sewa
             </span>
           </div>
 
@@ -80,7 +82,11 @@ const Navbar = () => {
               className="flex items-center space-x-2 px-6 py-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-full hover:from-sky-600 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <Calendar className="h-4 w-4" />
-              <span>Book Appointment</span>
+              {user?.isDoctor ? (
+                <span>Go to Dashboard</span>
+              ) : (
+                <span>Book Appointment</span>
+              )}
             </button>
             {!localStorage.getItem("token") && (
               <button
@@ -142,15 +148,21 @@ const Navbar = () => {
                   className="flex items-center space-x-2 w-full px-4 py-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded-lg"
                 >
                   <Calendar className="h-4 w-4" />
-                  <span>Book Appointment</span>
+                  {user?.isDoctor ? (
+                    <span>Dashboard</span>
+                  ) : (
+                    <span>Book Appointment</span>
+                  )}
                 </button>
-                <button
-                  onClick={() => navigate("/login")}
-                  className="flex items-center space-x-2 w-full px-4 py-2 text-gray-700 hover:text-sky-500 transition-colors"
-                >
-                  <LogIn className="h-4 w-4" />
-                  <span>Login</span>
-                </button>
+                {!localStorage.getItem("token") && (
+                  <button
+                    onClick={() => navigate("/login")}
+                    className="flex items-center space-x-2 w-full px-4 py-2 text-gray-700 hover:text-sky-500 transition-colors"
+                  >
+                    <LogIn className="h-4 w-4" />
+                    <span>Login</span>
+                  </button>
+                )}
               </div>
             </div>
           </div>

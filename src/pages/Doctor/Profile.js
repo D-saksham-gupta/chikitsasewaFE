@@ -20,7 +20,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/doctor/update-doctor-profile",
+        "https://chikitsa-sewa-backend.onrender.com/api/doctor/update-doctor-profile",
         {
           ...values,
           userId: user._id,
@@ -53,7 +53,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/doctor/get-doctor-info-by-user-id",
+        "https://chikitsa-sewa-backend.onrender.com/api/doctor/get-doctor-info-by-user-id",
         {
           userId: params.userId,
         },

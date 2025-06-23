@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <Stethoscope className="h-8 w-8 text-sky-400" />
-              <span className="text-xl font-bold">MediCare Pro</span>
+              <span className="text-xl font-bold">Chikitsa Sewa</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Providing exceptional healthcare services with compassion,

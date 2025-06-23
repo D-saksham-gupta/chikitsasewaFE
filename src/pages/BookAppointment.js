@@ -21,7 +21,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/doctor/get-doctor-info-by-id",
+        "https://chikitsa-sewa-backend.onrender.com/api/doctor/get-doctor-info-by-id",
         {
           doctorId: params.doctorId,
         },
@@ -49,7 +49,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/book-appointment",
+        "https://chikitsa-sewa-backend.onrender.com/api/user/book-appointment",
         {
           doctorId: params.doctorId,
           userId: user._id,
@@ -88,7 +88,7 @@ function BookAppointment() {
       <Row>
         <Col span={12} sm={24} xs={24} lg={8}>
           <p className="title">
-            <b>Timings: </b>10 to 5
+            <b>Timings: </b>10 A.M. to 5 P.M.
           </p>
           <div className="d-flex flex-column">
             <DatePicker
@@ -102,10 +102,13 @@ function BookAppointment() {
                 setTime(moment(values).format("HH:mm"));
               }}
             />
-            <Button className="primary-btn mt-3 my-3">
+            <Button className="flex items-center mt-4 space-x-2 px-6 py-6 bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded hover:from-sky-600 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105 shadow-lg">
               Check Availability
             </Button>
-            <Button className="primary-btn mt-3 my-3" onClick={bookNow}>
+            <Button
+              className="flex items-center mt-4 space-x-2 px-6 py-6 bg-gradient-to-r from-sky-500 to-cyan-400 text-white rounded hover:from-sky-600 hover:to-cyan-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              onClick={bookNow}
+            >
               Book Appointment
             </Button>
           </div>

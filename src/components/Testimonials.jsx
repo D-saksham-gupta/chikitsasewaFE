@@ -8,7 +8,7 @@ const Testimonials = () => {
       image:
         "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400",
       rating: 5,
-      text: "The care I received at MediCare Pro was exceptional. The doctors were thorough, compassionate, and truly listened to my concerns. The online booking system made scheduling so convenient!",
+      text: "The care I received at Chikitsa Sewa was exceptional. The doctors were thorough, compassionate, and truly listened to my concerns. The online booking system made scheduling so convenient!",
     },
     {
       name: "Michael Chen",
@@ -24,7 +24,7 @@ const Testimonials = () => {
       image:
         "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=400",
       rating: 5,
-      text: "The facilities are modern and clean, and the staff is incredibly friendly. I felt comfortable throughout my entire visit. Highly recommend MediCare Pro to anyone seeking quality healthcare.",
+      text: "The facilities are modern and clean, and the staff is incredibly friendly. I felt comfortable throughout my entire visit. Highly recommend Chikitsa Sewa to anyone seeking quality healthcare.",
     },
     {
       name: "David Thompson",
@@ -79,7 +79,7 @@ const Testimonials = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Don't just take our word for it. Here's what our patients have to
-            say about their experience with MediCare Pro.
+            say about their experience with Chikitsa Sewa.
           </p>
         </div>
 

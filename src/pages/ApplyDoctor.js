@@ -17,7 +17,7 @@ const ApplyDoctor = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/apply-doctor-account",
+        "https://chikitsa-sewa-backend.onrender.com/api/user/apply-doctor-account",
         {
           ...values,
           userId: user._id,

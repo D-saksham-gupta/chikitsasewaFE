@@ -17,7 +17,7 @@ function Notifications() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/mark-all-notifications-as-seen",
+        "https://chikitsa-sewa-backend.onrender.com/api/user/mark-all-notifications-as-seen",
         {
           userId: user._id,
         },
@@ -43,7 +43,7 @@ function Notifications() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "/api/user/delete-all-notifications",
+        "https://chikitsa-sewa-backend.onrender.com/api/user/delete-all-notifications",
         {
           userId: user._id,
         },
@@ -68,7 +68,9 @@ function Notifications() {
 
   return (
     <Layout>
-      <h1 className="page-title">Notifications</h1>
+      <h1 className="p-2 rounded mb-2 text-4xl text-pretty font-semibold h-16 w-16 text-sky-500">
+        Notifications
+      </h1>
 
       <Tabs>
         <Tabs.TabPane tab="Unread" key={0}>
