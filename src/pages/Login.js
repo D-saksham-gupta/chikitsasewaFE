@@ -102,7 +102,7 @@ function Login() {
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Stethoscope className="h-8 w-8 text-sky-500" />
               <span className="text-2xl font-bold text-gray-800">
-                MediCare Pro
+                Chikitsa Sewa
               </span>
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
