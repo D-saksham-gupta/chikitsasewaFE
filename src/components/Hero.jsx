@@ -42,9 +42,7 @@ const Hero = () => {
                 <Calendar className="h-5 w-5" />
                 <span>Book Appointment Now</span>
               </Link>
-              <button className="px-8 py-4 border-2 border-sky-500 text-sky-500 rounded-full hover:bg-sky-500 hover:text-white transition-all duration-300 text-lg font-semibold">
-                View Our Services
-              </button>
+              
             </div>
 
             {/* Stats */}
